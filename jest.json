@@ -1,0 +1,31 @@
+{
+  "globals": {
+    "ts-jest": {
+      "diagnostics": true,
+      "tsConfig": "./tsconfig.json"
+    }
+  },
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testEnvironment": "node",
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules/",
+    "/__tests__/.*\\.setup\\.ts",
+    "/__tests__/specHelper\\.ts"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json"
+  ],
+  "setupFiles": ["<rootDir>/__tests__/env.setup.ts"],
+  "collectCoverage": false,
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "<rootDir>/src/Logger.ts"
+  ]
+}

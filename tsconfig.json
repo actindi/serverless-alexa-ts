@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es6",
+    "lib": [
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ]
+  },
+  "outDir": "./dest/",
+  "exclude": [
+    "node_modules"
+  ]
+}

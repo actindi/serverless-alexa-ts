@@ -1,0 +1,51 @@
+{
+  "name": "serverless-alexa-ts",
+  "version": "1.0.0",
+  "description": "An Alexa skill template",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest --config jest.json",
+    "test:coverage": "./node_modules/.bin/jest --config jest.json --coverage",
+    "doc": "./node_modules/.bin/typedoc --mode file --tsconfig tsconfig.json --out doc",
+    "sls:webpack": "./node_modules/.bin/serverless webpack",
+    "sls:package": "./node_modules/.bin/serverless package",
+    "sls:deploy": "./node_modules/.bin/serverless deploy",
+    "sls:dynamodb:start": "./node_modules/.bin/serverless dynamodb start",
+    "sls:dynamodb:install": "./node_modules/.bin/serverless dynamodb install",
+    "sls:dynamodb:remove": "./node_modules/.bin/serverless dynamodb remove",
+    "ask:get-skill": "ask api get-skill -s $npm_config_skill_id > interaction_models/skill.json",
+    "ask:get-model": "ask api get-model -s $npm_config_skill_id -l ja-JP > interaction_models/model_ja-JP.json",
+    "ask:update-model": "cli-confirm 'Do you really want to update model?' && ask api update-model -s $npm_config_skill_id -l ja-JP -f interaction_models/model_ja-JP.json"
+  },
+  "dependencies": {
+    "ask-sdk": "^2.0.10",
+    "source-map-support": "^0.5.8",
+    "ssml-builder": "^0.4.3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.13",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^8.10.32",
+    "@types/source-map-support": "^0.4.1",
+    "@types/webpack": "^4.4.13",
+    "ask-cli": "^1.4.4",
+    "aws-sdk": "^2.327.0",
+    "cli-confirm": "^1.0.0",
+    "jest": "^23.6.0",
+    "serverless": "^1.32.0",
+    "serverless-dynamodb-local": "^0.2.35",
+    "serverless-webpack": "^5.2.0",
+    "ts-jest": "^23.10.3",
+    "ts-loader": "^5.2.1",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.11.0",
+    "typedoc": "^0.12.0",
+    "typescript": "^3.1.1",
+    "virtual-alexa": "^0.6.14",
+    "webpack": "^4.20.2"
+  },
+  "author": "actindi inc.",
+  "repository": "https://github.com/actindi/serverless-alexa-ts",
+  "license": "proprietary"
+}

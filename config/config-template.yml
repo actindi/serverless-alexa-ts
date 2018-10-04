@@ -1,0 +1,11 @@
+develop:
+  memorySize: 128
+  timezone: Asia/Tokyo
+  alexa:
+    SKILL_ID: 'your-skill-id'
+
+production:
+  memorySize: 256
+  timezone: Asia/Tokyo
+  alexa:
+    SKILL_ID: 'amzn1.ask.skill.your-skill-id'

@@ -1,0 +1,70 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "サンプルスキル",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "FeelingIntent",
+          "slots": [
+            {
+              "name": "feeling",
+              "type": "Feeling"
+            }
+          ],
+          "samples": [
+            "よくわかんない",
+            "今日は {feeling}",
+            "今日は {feeling} な気分",
+            "今日の気分は {feeling}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "5",
+              "name": {
+                "value": "普通"
+              }
+            },
+            {
+              "id": "10",
+              "name": {
+                "value": "絶好調"
+              }
+            },
+            {
+              "id": "0",
+              "name": {
+                "value": "最低",
+                "synonyms": [
+                  "最悪"
+                ]
+              }
+            },
+            {
+              "id": "8",
+              "name": {
+                "value": "最高"
+              }
+            }
+          ],
+          "name": "Feeling"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.keep
+# package directories
+node_modules
+.npmrc
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Webpack directories
+.webpack
+
+# Jest
+coverage
+
+# tsdoc
+doc
+
+config/*
+!config/config-template.yml
